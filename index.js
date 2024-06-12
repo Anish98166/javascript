@@ -41,3 +41,6 @@ let num2 = 2;
 
 // console.log("a" - "a");
 // console.log(`sum of ${num1}`);
+
+console.log(1);
+console.log(2);
