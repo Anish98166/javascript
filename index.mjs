@@ -628,3 +628,136 @@ console.log(object) */
 
 // let totalData = [...name, "this is my data", ...data];
 // console.log(totalData);
+
+//Number sort
+// let list = [9, 4, 7, 2, 5, 8, 1];
+// let output = list.sort((a, b) => {
+//   return b - a;
+// });
+// console.log(output);
+
+// let list = ["ram", "anish", "javascript", "az", "john", "hari"];
+
+// let output = list.sort((a, b) => {
+//   return a.length - b.length;
+// });
+// console.log(output);
+
+//convert object into Array
+// let info = {
+//   name: "ram",
+//   age: 30,
+//   isMarried: false,
+// };
+
+// let keysArray = Object.keys(info);
+// console.log(keysArray);
+// let valueArray = Object.values(info);
+// console.log(valueArray);
+// let propertyArray = Object.entries(info);
+// console.log(propertyArray);
+//[ [ 'name', 'ram' ], [ 'age', 30 ], [ 'isMarried', false ] ]
+
+//convert Array into object
+// let info = [
+//   ["name", "ram"],
+//   ["age", 30],
+//   ["isMarried", false],
+// ];
+
+// let output = Object.fromEntries(info);
+// console.log(output);
+
+//Math
+// let data = Math.random(); //[0,1]
+// console.log(data);
+
+// let data = Math.random() * 8; //[0,1]* 100
+// console.log(data);
+
+// let data = Math.ceil(1.23);
+// console.log(data);
+// let data1 = Math.floor(1.99);
+// console.log(data1);
+
+//scope
+//{}
+// {
+//   let a = 1;
+//   console.log(a);
+// }
+// console.log(a);
+// console.log(a);
+//A variabale will be known with in its block for the line where it is defined
+
+// {
+//   //parent-block
+//   let a = 1;
+//   {
+//     //child-block
+//     console.log(a);
+//   }
+//   console.log(a);
+// }
+// when a variable is called, first it is searched in its own block, if variable is not find in that block then it will search for its parent block
+
+// {
+//   let a = 1;
+//   {
+//     let a = 10;
+//     console.log(a);
+//   }
+//   console.log(a);
+// }
+// A variable can not be redefined in the same block. but we can redefine same variable in different block
+
+// == or ===
+
+// console.log("1" == 1); //true, It only sees value
+// console.log("1" === 1); //false, It sees value & type
+
+//NaN
+
+// console.log(1 + 1);
+// console.log("a" * "b");
+
+// let a;
+// console.log(a);
+// Undefined means variable is defined but not initialized.
+
+// Rest or spread   ...
+//Rest Operator always place at last parameter
+// let { age, ...rest } = { name: "ram", age: 20, isMarried: true };
+
+// console.log(name);
+// console.log(rest);
+
+// let sum = (a, ...b) => {
+//   console.log(a);
+//   console.log(b);
+// };
+// sum(1, 2, 4, 5, 5, 6, 7, 7, 8);
+
+//spread
+// let arr = [1, 2, 3, 4, 5];
+// let ar1 = ["ram", "john", "tim"];
+
+// let output = [2, 4, ...ar1, 6, 8, ...arr, "javascript"];
+// console.log(output);
+
+// let info = { name: "ram", age: 20, isMarried: true };
+// let info1 = { ...info };
+// // console.log(info1);
+// let info2 = { ...info, location: "kathmandu" };
+// console.log(info2);
+
+// let error = new Error("this is first error");
+// throw error;
+
+// const obj = { name: "John", age: 30, city: "New York" };
+// const myJSON = JSON.stringify(obj);
+// console.log(myJSON);
+
+// const obj = '{"name":"John", "age":30, "city":"New York"}';
+// const data = JSON.parse(obj);
+// console.log(data);
