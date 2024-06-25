@@ -8,3 +8,8 @@ let product = [
 //[ { name: 'laptop', price: 100000 }, { name: 'tv', price: 70000 } ]
 //[ { laptop: 100000 }, { mobile: 50000 }, { tv: 70000 } ]
 //[ 'laptop', 'tv' ]
+
+let output = product.map((value, index) => {
+  return { [value.name]: value.price };
+});
+console.log(output);
